@@ -1,0 +1,14 @@
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1397px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --c-white: #fff;
+  --c-dark: #000;
+  --c-text: #222;
+  --c-accent: #FB4B4D;
+}
