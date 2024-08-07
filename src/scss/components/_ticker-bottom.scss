@@ -1,0 +1,23 @@
+.ticker-bottom {
+
+  &__content {
+    font-size: 17px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    .ticker {
+      margin-top: -1px;
+      padding: 23px 0;
+      border-left: 1px solid var(--c-dark);
+      border-right: 1px solid var(--c-dark);
+    }
+
+    .ticker__icon {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
