@@ -1,5 +1,6 @@
 .ticker-bottom {
 
+
   &__content {
     font-size: 17px;
     letter-spacing: 0.03em;
@@ -10,6 +11,10 @@
       padding: 23px 0;
       border-left: 1px solid var(--c-dark);
       border-right: 1px solid var(--c-dark);
+    }
+
+    .ticker__item {
+      animation: ticker 11s linear infinite;
     }
 
     .ticker__icon {
