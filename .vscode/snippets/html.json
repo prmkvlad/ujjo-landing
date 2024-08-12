@@ -118,7 +118,7 @@
     "description": "Snippet for simple html svg images"
   },
   "tooltip": {
-  "prefix": "g-tooltip",
+    "prefix": "g-tooltip",
     "body": [
       "<span class=\"tooltip\">",
       "  <button class=\"btn-reset tooltip__btn\" aria-describedby=\"$1\">$2</button>",

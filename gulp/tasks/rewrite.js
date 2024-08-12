@@ -9,7 +9,7 @@ export const rewrite = () => {
       manifest
     }))
     .pipe(app.gulp.dest(app.paths.buildCssFolder));
-    return app.gulp.src(`${app.paths.base.build}/**/*.html`)
+  return app.gulp.src(`${app.paths.base.build}/**/*.html`)
     .pipe(revRewrite({
       manifest
     }))

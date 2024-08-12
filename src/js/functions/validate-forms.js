@@ -23,7 +23,7 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
       if (item.tel) {
         item.rules.push({
           rule: 'function',
-          validator: function() {
+          validator: function () {
             const phone = telSelector.inputmask.unmaskedvalue();
             return phone.length === 10;
           },

@@ -2,19 +2,17 @@
   display: inline-block;
   border: none;
   padding: 15px 44px;
-  text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fff;
-  background-color: var(--c-accent);
   color: var(--c-white);
-  cursor: pointer;
+  background-color: var(--c-accent);
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 
   @include hover {
     outline: 1px solid var(--c-accent);
-    background-color: var(--c-white);
     color: var(--c-accent);
+    background-color: var(--c-white);
   }
 }

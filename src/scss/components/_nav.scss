@@ -20,12 +20,12 @@
 
   &__link {
     display: inline-block;
+    outline-color: var(--c-accent);
     padding: 15px 44px;
     font-size: 14px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--c-text);
-    outline-color: var(--c-accent);
 
     @include hover {
       outline: 1px solid var(--c-accent);

@@ -2,10 +2,10 @@
   margin-top: -1px;
 
   &__img {
-    display: block;
     position: relative;
+    z-index: 2;
+    display: block;
     margin-top: -13%;
     width: 100%;
-    z-index: 2;
   }
 }
