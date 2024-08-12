@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  min-width: 375px;
+}
+
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
@@ -33,6 +38,14 @@ a {
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+
+  @include big-desktop {
+    min-width: 1430px;
+  }
+
+  @include tablet {
+    min-width: auto;
+  }
 }
 
 .is-hidden {
@@ -105,4 +118,9 @@ a {
 
 .flex {
   display: flex;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 }

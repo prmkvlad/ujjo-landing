@@ -12,6 +12,14 @@
       display: block;
       width: 225px;
       height: 156px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        width: 100px;
+        height: 70px;
+      }
     }
 
     &:before {
@@ -33,6 +41,26 @@
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: var(--c-dark);
+
+    @include tablet {
+      padding: 40px 0;
+    }
+
+    @include mobile {
+      padding: 20px;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      width: calc(50% - 13px);
+    }
+
+    @include mobile {
+      width: auto;
+    }
   }
 
   &__decorative {
@@ -55,6 +83,10 @@
         transform: translateX(15px);
       }
     }
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__content {
@@ -68,7 +100,13 @@
     flex-wrap: wrap;
     padding: 0 20px;
     padding-bottom: 20px;
-    gap: 26px;
+    row-gap: 30px;
+    column-gap: 26px;
+
+    @include tablet {
+      justify-content: center;
+      column-gap: 20px;
+    }
   }
 
   &__ticker {

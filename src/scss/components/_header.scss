@@ -7,6 +7,10 @@
   &__block {
     align-items: center;
     justify-content: space-between;
-    padding: 22px;
+    padding: 25px;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 }

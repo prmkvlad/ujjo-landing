@@ -2,20 +2,29 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   gap: 14px;
   padding: 22px;
   padding-top: 70px;
-  min-height: 658px;
   background-image: url('../img/product-bg.svg');
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
+  aspect-ratio: 0.66 / 1;
+
+  @include mobile {
+    // min-height: 500px;
+  }
 
   &__taste {
     font-size: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 
   &__title {
@@ -26,7 +35,17 @@
     line-height: 1.19;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 28px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
-  &__image {}
+  &__image {
+    width: 100%;
+  }
 }
